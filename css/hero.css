@@ -1,0 +1,75 @@
+.banner {background-image: url(../img/Prostok%C4%85t%201%20kopia%203.png);
+	background-position: top;
+	background-size: cover;
+	min-height: 800px;
+}
+.hero-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:132px 0;
+}
+.hero-btn {
+	margin-top: 44px;
+	padding: 17px 52px;
+}
+.slogan {
+	position: relative;
+	font-size: 46px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+	letter-spacing: 1px;
+  line-height: 1.5;
+	font-weight:lighter;
+	font-family: "Lato Light";
+}
+.slogan::after {
+	content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 200px;
+  height: 2px;
+  background-color: #ed145b;
+}
+.slogan-logo {font-family: "Lato",sans-serif;
+	font-weight:bolder;
+}
+.text-slogan-subtitle {
+	margin-top: 8px;
+	text-align: center;
+  max-width: 960px;
+	font-family: "Lato Light";
+}
+.slogan-subtitle {
+	font-size: 22px;
+  color: rgb(255, 255, 255);
+  line-height: 0.953;
+	letter-spacing: 0.6px;
+  font-weight: 100;
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.slogan {
+	font-size: 40px;
+	text-align: center;
+	}
+.slogan::after {
+	width: 180px;
+  height: 2px;
+ 	}
+	.text-slogan-subtitle {
+		max-width: 750px;
+		padding: 5px;
+	}
+	.slogan-subtitle {
+		font-size: 20px;
+		padding: 0 5px;
+	}
+	.hero-btn {
+    min-width: 140px;
+    margin-top: 20px;
+    padding: 15px 25px;
+}

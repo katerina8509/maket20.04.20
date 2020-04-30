@@ -1,0 +1,24 @@
+.info {
+	margin-top: 10px;
+	background-image: url(../img/Prostok%C4%85t%201%20kopia%205.png);
+	min-height: 500px;
+	background-position:center;
+	background-size: cover;
+	color: white;
+	padding-top: 104px;
+}
+.info-inner {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 145px;
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.info {
+		min-height: 400px;
+		padding-top: 50px;
+	}
+	.info-inner {
+		padding-bottom: 45px;
+	}
+}

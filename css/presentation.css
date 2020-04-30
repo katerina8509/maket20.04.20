@@ -1,0 +1,70 @@
+.presentation {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+	background: linear-gradient(to bottom, #ddd 87%, white 87%);
+}
+.presentation-inner {
+	max-width: 490px;
+	padding-top:107px;
+	text-align:left;
+}
+
+.presentation-content {
+	margin-top: 37px;
+}
+.presentation-link {
+	display: flex;
+	text-decoration: none;
+	padding-top: 22px;
+	padding-bottom: 91px;
+	padding-left: 6px;
+	color:  #ed145b;
+}
+.presentation-link-text {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.presentation-link-img {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width: 30px;
+	max-width: 30px;
+	max-height: 30px;
+	height: 30px;
+	margin-left: 12px;
+	border: 1px solid  #ed145b;
+	border-radius: 50%;
+}
+.presentation-img {
+	position: absolute;
+	bottom: 0;
+  left: 44.5%;
+	width: 1030px;
+	height: 640px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .presentation-text {
+       padding: 5px 15px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.presentation {
+		padding-bottom: 60px;
+	}
+	.presentation-inner {
+		padding-top: 20px;
+	}
+
+	.presentation-img {
+		display: none;
+	}
+	.presentation-link {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.presentation-content {
+	margin-top: 15px;
+	}
+}

@@ -1,0 +1,42 @@
+.dowload {
+	padding-top: 76px;
+	padding-bottom: 90px;
+	background-color: #f4f4f4;
+}
+.dowload-inner {
+	display: flex;
+}
+.dowload-part {
+	padding-left: 60px;
+  padding-top: 32px;
+
+}
+
+.dowload-part-img {
+	  padding: 0;
+    margin-left: -180px;
+    flex: 0 0 calc(50% + 191px);
+    max-width: calc(50% + 191px);
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) { 
+.dowload {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+	.dowload-inner {
+	flex-direction: column;
+}
+	.dowload-part {
+	padding-left: 0;
+  padding-top: 15px;
+
+}
+	.dowload-part-img {
+		margin-left: 0;
+	}
+	.dowload-btn {
+		margin-top: 25px;
+	}
+}

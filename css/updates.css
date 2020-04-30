@@ -1,0 +1,129 @@
+.updates {
+	padding-top: 110px;
+}
+.updates-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 89px;
+	margin: 0 -15px 0 -15px;
+}
+.updates-item {
+	flex: 0 0 33.33%;
+  max-width: 33.33%;
+	padding: 0 15px 60px 15px;
+}
+.updates-card-img {
+	position: relative;
+	padding-top: 70%;
+
+}
+.updates-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.updates-item-card {
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+
+.updates-card-img::after {
+		position: absolute;
+    content: "";
+	padding-top: 3%;
+    left: 0;
+     bottom: 0;
+    display: block;
+    width: 100%;
+		background-color: #ed145b;
+    /*background: linear-gradient(to left bottom, transparent 48%, #ed145b 52%);*/
+		clip-path: polygon(0 100%, 100%  100%, 0% 0%);
+}
+.updates-card-img:hover::after {
+	display: none;
+}
+.updates-card-title {
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+ 	margin-top: 18px;
+}
+.updates-card-text {
+	letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+.updates-card-content {
+	padding: 0 20px 5px 20px;
+}
+
+
+.updates-card-hover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	background-color: rgba(237, 20, 91, 0.7);
+	overflow: hidden;
+	opacity: 0;
+}
+.updates-hover-icon {
+	margin: 0 auto;
+}
+.updates-card-hover:hover {
+	height: 100%;
+	opacity: 0.95;
+	transition: opacity 0.5s;
+}
+.updates-btn {
+	  padding: 50px 0px;
+		cursor: pointer;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    color: rgb(237, 20, 91);
+    text-transform: uppercase;
+    line-height: 2.2;
+    border: none;
+    display: block;
+    font-weight: bold;
+  }
+.updates-btn-img {
+	display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.updates-btn {
+	padding: 15px 0;
+	}
+	.updates-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px 25px 15px;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.updates {
+		padding-top: 10px;
+	}
+	.updates-list {
+		padding-top: 10px;
+	}
+	.updates-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px 20px 15px;
+}
+	.updates-btn {
+		padding: 10px;
+	}
+}
