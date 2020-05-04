@@ -3,10 +3,9 @@
 	min-height: 500px;
 	background-position:center;
 	background-size: cover;
-}
-.quote-inner {
 	padding-top: 100px;
 }
+
 .quote-img {
 	margin: 0 auto;
 	text-align: center;
@@ -103,17 +102,20 @@
     max-width: 840px;
     margin: 0 auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-	
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.quote {
+		display: flex;
+		align-items: center;
+	}
 	.quote-inner {
-	padding-top:30px;
+	padding-top: 30px;
 }
 	.slick-next {
     right: 0;
 	}
  .slick-prev {
     left: 0;
-	}
+}
 .quote-text {
 		font-size: 22px;
   }
@@ -138,7 +140,7 @@
 		display: none;
 	}
 	.quote-text {
-		text-align: left;
+		
 		font-size: 21px;
 	}
 	.slick-next {

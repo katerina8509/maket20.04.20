@@ -48,6 +48,9 @@
 	display: none;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.header {
+		background-color: black;
+	}
 	.header-menu {
 		position: relative;
 	}
@@ -133,7 +136,7 @@
 		}
 		.header-menu-link {
 		margin: 0 auto;
-		font-size: 20px;
+		font-size: 26px;
 		padding: 5px 20px;
 		}
     body.activ-scroll {

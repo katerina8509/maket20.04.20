@@ -25,6 +25,9 @@ body {
 	color: rgb(90, 90, 90);
   line-height: 2;
 }
+body.activ-scroll {
+  overflow: hidden;
+}
 
 .wrapper {
    max-width: 1920px;
@@ -36,7 +39,6 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-    border: solid 1px red;
 }
 .section-title {
 	text-align: center;
@@ -83,6 +85,7 @@ body {
   text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.5px;
+	
 	}
 .btn {
 	font-weight: bold;
@@ -113,6 +116,9 @@ body {
     letter-spacing: 0.1px;
 		color: #ed145b;
 }
+.btn-white:hover {
+	box-shadow: inset 1px -1px 6px 0px;
+}
 .border-red {
 	width: 0;
 	height: 0;
@@ -125,6 +131,7 @@ body {
 .text-left {
 	text-align: left;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 960px) {
    .container {
       padding: 0 10px;

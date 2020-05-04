@@ -36,17 +36,18 @@
 .updates-card-img::after {
 		position: absolute;
     content: "";
-	padding-top: 3%;
+		padding-top: 3%;
     left: 0;
-     bottom: 0;
+    bottom: 0;
     display: block;
     width: 100%;
 		background-color: #ed145b;
-    /*background: linear-gradient(to left bottom, transparent 48%, #ed145b 52%);*/
-		clip-path: polygon(0 100%, 100%  100%, 0% 0%);
+   	clip-path: polygon(0 100%, 100%  100%, 0% 0%);
+		transition:  all 0.5s;
 }
 .updates-card-img:hover::after {
 	display: none;
+	transition: all 0.5s;
 }
 .updates-card-title {
 	text-transform: uppercase;
@@ -75,6 +76,7 @@
 	background-color: rgba(237, 20, 91, 0.7);
 	overflow: hidden;
 	opacity: 0;
+	transition: opacity 0.5s;
 }
 .updates-hover-icon {
 	margin: 0 auto;
@@ -85,9 +87,8 @@
 	transition: opacity 0.5s;
 }
 .updates-btn {
-	  padding: 50px 0px;
-		cursor: pointer;
-    margin: 0 auto;
+	 	cursor: pointer;
+    margin: 50px auto;
     background-color: white;
     text-align: center;
     color: rgb(237, 20, 91);
@@ -101,9 +102,52 @@
 	display: block;
   margin: 0 auto;
 }
+.updates-popup {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 99;
+	background-color: rgba(237, 20, 91, 0.75);
+	display: none;
+}
+.updates-popup.active {
+	display: block;
+}
+.updates-popup-img {
+	margin: 10% 25%;
+	width: 50%;
+}
+.updates-popup-exid {
+	position: fixed;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  right: 15px;
+	cursor: pointer;
+}
+.updates-popup-exid::after,
+.updates-popup-exid::before {
+	content: '';
+	position: absolute;
+  top: 20px;
+  background-color:white;
+  width: 100%;
+  height: 5px;
+	border-radius: 10px;
+}
+.updates-popup-exid::after {
+	left: 0;
+  transform: rotate(-45deg);
+}
+.updates-popup-exid::before{
+  right: 0;
+  transform: rotate(45deg);
+	}
 @media only screen and (min-width: 768px) and (max-width: 960px) {
 	.updates-btn {
-	padding: 15px 0;
+	margin: 15px auto;
 	}
 	.updates-item {
     flex: 0 0 50%;
@@ -124,6 +168,6 @@
     padding: 0 15px 20px 15px;
 }
 	.updates-btn {
-		padding: 10px;
+		margin: 10px auto;
 	}
 }
