@@ -32,6 +32,7 @@ footer {
 		font-size: 13px;
 	}
 	.footer-content {
+		flex-direction: column;
 		padding: 25px 0px;
 	}
 }

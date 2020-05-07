@@ -9,7 +9,17 @@
 	padding-top:107px;
 	text-align:left;
 }
-
+.presentation::after{
+	content:"";
+	position: absolute;
+	height: 3%;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	background-color: #ed145b;
+	clip-path: polygon(0 100%, 100% 0%, 0% 0%);
+}
 .presentation-content {
 	margin-top: 37px;
 }

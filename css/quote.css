@@ -106,10 +106,9 @@
 	.quote {
 		display: flex;
 		align-items: center;
+		padding-top: 30px;
 	}
-	.quote-inner {
-	padding-top: 30px;
-}
+
 	.slick-next {
     right: 0;
 	}
@@ -126,11 +125,12 @@
 	}
 }
 @media only screen and (min-width: 300px) and (max-width: 767px)	 {
-	.quote-inner {
-		padding-top: 20px;
-}
 	.quote {
-		min-height: 400px;
+		min-height: auto;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		align-items: center;
+    display: flex;
 	}
 	.quote-slide {
 		padding: 20px 7px;
@@ -150,6 +150,6 @@
     left: 100px;
 	}
 	.slick-prev, .slick-next {
-		top: 310px;
+		top: 98%;
 	}
 }

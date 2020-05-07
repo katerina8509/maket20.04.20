@@ -113,10 +113,11 @@
 	display: none;
 }
 .updates-popup.active {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .updates-popup-img {
-	margin: 10% 25%;
 	width: 50%;
 }
 .updates-popup-exid {

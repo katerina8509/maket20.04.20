@@ -69,7 +69,7 @@
 		</div>
 		</section>
 		<section class="presentation">
-			<div class="border-red"></div>
+		
 			<div class="container">
 				<div class="presentation-inner">
 					<h2 class="section-title section-title-left">Powerfull PSD template
@@ -435,13 +435,115 @@
 								</div>
 							</div>
 						</div>
+						
+						<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic1.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic2.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic3.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						 	<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic2.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic3.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="updates-item hidden-blocks">
+							<div class="updates-item-card">
+								<div class="updates-card-img">
+									<img src="img/updates/pic4.png" alt="" class="updates-img">
+									<div class="updates-card-hover">
+										<div class="updates-hover-icon">
+											<img src="img/updates/095__search.png" alt="" class="updates-hover-icon">
+										</div>
+									</div>
+								</div>
+								<div class="updates-card-content">
+									<p class="updates-card-title">LOREM IPSUMa DOLOR SIT</p>
+									<p class="updates-card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et </p>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 					<button class="updates-btn wow swing">SHOW MORE
 					<img src="img/updates/002__arrow_right.png" alt="" class="updates-btn-img"></button>
 				</div>
 			</div>
 		</section>
-		<div class="hidden-blocks">
+		
 			<section class="info">
 			<div class="container">
 				<div class="info-inner">
@@ -483,7 +585,7 @@
 				</div>
 			</div>
 		</footer>
-		</div>
+	
 	</div>
 	<script src="css/wow-animation/wow.min.js"></script>
 	<script src="https://use.fontawesome.com/4ae2de40d9.js"></script>
@@ -496,7 +598,15 @@
             $('body').toggleClass('activ-scroll');
         });
 				$('.quote-slide').slick();
-				 new WOW().init();
+			
+				$('.updates-btn').mouseover (function(){
+					new WOW().init();
+					$(this).addClass("animeted" );
+						
+				});
+				$('.updates-btn').mouseout (function(){
+					$(this).removeClass("animeted");
+				});
 				$('.updates-card-img').click(function(){
 					let a =	$(this).find('img').attr ('src');
 					 console.log(a);
